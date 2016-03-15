@@ -1,28 +1,8 @@
-amkit testing march 8 2016
-this is test line
-kjlkj
-this is test line
-this is test line
-kjlkj
-this is test line
-this is test line
-kjlkj
-
-kjlkj
-
-kjlkj
-kjlkj
-jlkjlkjlkjlkjlkjlkjlk
-hkuhjklhkjhkjhk
-jaujnvcxzadXXXXXkjlkj
-this is test line
-kjlkj
-this is test line
-nnnnnnnnnnnnnnjjkkkkllkjhgfcdsszaaxcffvbnbmuyree99765tyreww
-
-this is test line
-kjlkj
-this is test line
-
-
-
+March 15 2016.
+ Vim File.
+                 _ _   
+  __ _ _ __ ___ (_) |_ 
+ / _` | '_ ` _ \| | __|
+| (_| | | | | | | | |_ 
+ \__,_|_| |_| |_|_|\__|
+                       
