@@ -17,22 +17,46 @@ struct mystruct {
 typedef struct mystruct list;
 void printList (list *);
 
+void makelistlarge(list *);
+
+void appendatlast (list *, list *);
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     printf("Hello, World!\n");
     list *parent = (list *)malloc(sizeof(list));
-    parent -> data = 1;
+    parent -> data = 0;
     parent -> node = NULL;
-    
-    list *child1 = (list *) malloc(sizeof(list));
-    child1 -> data = 2;
-    child1 -> node = NULL;
-    
-    parent -> node = child1;
-    
     printList(parent);
+    makelistlarge(parent);
+    
     return 0;
 }
+
+void appendatlast (list *appendlast, list * parent){
+list *temp = parent;
+while (temp -> node)
+{
+//printf("in while loop \n");
+if (temp -> node){
+temp = temp -> node;
+}
+}
+
+temp -> node = appendlast;
+
+}
+void makelistlarge(list *parent){
+for (int i=0; i<= 10; i++)
+{
+list *templist = (list *)malloc(sizeof(list));
+templist -> data = i + 1;
+templist -> node = NULL;
+appendatlast (templist, parent);
+}
+
+}
+
 
 void printList(list *theList) {
   
