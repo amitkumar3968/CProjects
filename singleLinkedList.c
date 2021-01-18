@@ -27,36 +27,36 @@ int main(int argc, const char * argv[]) {
     list *parent = (list *)malloc(sizeof(list));
     parent -> data = 0;
     parent -> node = NULL;
-    printList(parent);
+  
     makelistlarge(parent);
-    
+    printList(parent);  
     return 0;
 }
 
 void appendatlast (list *appendlast, list * parent){
-list *temp = parent;
-while (temp -> node)
-{
-//printf("in while loop \n");
-if (temp -> node){
-temp = temp -> node;
-}
+    list *temp = parent;
+    while (temp -> node)
+    {
+    //printf("in while loop \n");
+        if (temp -> node){
+        temp = temp -> node;
+        }
+    }
+
+    temp -> node = appendlast;
+
 }
 
-temp -> node = appendlast;
-
-}
 void makelistlarge(list *parent){
-for (int i=0; i<= 10; i++)
-{
-list *templist = (list *)malloc(sizeof(list));
-templist -> data = i + 1;
-templist -> node = NULL;
-appendatlast (templist, parent);
-}
+    for (int i=0; i<= 10; i++)
+    {
+        list *templist = (list *)malloc(sizeof(list));
+        templist -> data = i + 1;
+        templist -> node = NULL;
+        appendatlast (templist, parent);
+    }
 
 }
-
 
 void printList(list *theList) {
   
